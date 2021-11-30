@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            background-color: lightgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+        }
+
+        td:hover {
+            background-color: lightyellow;
+        }
+
+        #resultado {
+            background-color: white;
+            text-align: end;
+            padding-right: 20px;
+            cursor: default;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function insertar() {
+
+            var valor = event.target.innerText;
+            var pantalla = document.getElementById("resultado");
+          
+            if (valor === ",") {
+                var inicial = 0;
+                var decimal = 0;
+                pantalla.innerText = "la coma";
+            } else {
+                pantalla.innerText = valor;
+            }
+
+            var n1 = 0;
+            var n2 = 0;
+            n2 = document.getElementById("resultado");
+            //console.log(numero);
+
+        }
+
+        function borrar(){
+
+            var pantalla = document.getElementById("resultado");
+            pantalla.innerText = 0;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="4" id="resultado">
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td onclick="borrar()">C</td>
+                <td onclick="dividir()">/</td>
+                <td onclick="producto()">*</td>
+                <td onclick="restar()">-</td>
+            </tr>
+            <tr>
+                <td class="numero" onclick="insertar(event)">7</td>
+                <td class="numero" onclick="insertar(event)">8</td>
+                <td class="numero" onclick="insertar(event)">9</td>
+                <td rowspan="2" onclick="sumar()">+</td>
+            </tr>
+            <tr>
+                <td class="numero" onclick="insertar(event)">4</td>
+                <td class="numero" onclick="insertar(event)">5</td>
+                <td class="numero" onclick="insertar(event)">6</td>
+            </tr>
+            <tr>
+                <td class="numero" onclick="insertar(event)">1</td>
+                <td class="numero" onclick="insertar(event)">2</td>
+                <td class="numero" onclick="insertar(event)">3</td>
+                <td rowspan="2">↵</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="numero" onclick="insertar(event)">0</td>
+                <td class="numero" onclick="insertar()">,</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
