@@ -6,71 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        td {
-            height: 50px;
-            width: 50px;
-            text-align: center;
-            background-color: lightgray;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            cursor: pointer;
-        }
-
-        td:hover {
-            background-color: lightyellow;
-        }
-
-        #resultado {
-            background-color: white;
-            text-align: end;
-            padding-right: 20px;
-            cursor: default;
-            height: 50px;
-        }
-
-        .marco {
-            border: 1px solid black;
-            padding: 10px;
-            display: inline-block;
-            background-color: lightcyan;
-        }
-    </style>
-    <script>
-        function insertar() {
-
-            var valor = event.target.innerText;
-            var pantalla = document.getElementById("resultado");
-
-            if (valor === ",") {
-                var inicial = 0;
-                var decimal = 0;
-                pantalla.innerText = "la coma";
-            } else {
-                pantalla.innerText = valor;
-            }
-
-            var n1 = 0;
-            var n2 = 0;
-            n2 = document.getElementById("resultado");
-            //console.log(numero);
-
-        }
-
-        function borrar() {
-
-            var pantalla = document.getElementById("resultado");
-            pantalla.innerText = 0;
-
-        }
-
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js"></script>
 </head>
 
 <body>

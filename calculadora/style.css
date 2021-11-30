@@ -1,0 +1,34 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: lightyellow;
+}
+
+#resultado {
+    background-color: white;
+    text-align: end;
+    padding-right: 20px;
+    cursor: default;
+    height: 50px;
+}
+
+.marco {
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    background-color: lightcyan;
+}
