@@ -11,9 +11,6 @@ function insertar() {
         pantalla.innerText = valor;
     }
 
-    //console.log(numero);
-    console.log(comprobarComa());
-
 }
 
 function borrar() {
@@ -39,5 +36,13 @@ function comprobarComa() {
     var pantalla = String(document.getElementById("resultado").innerText);
 
     return pantalla.includes(",");
+
+}
+
+function comprobarCero() {
+
+    var pantalla = String(document.getElementById("resultado").innerText);
+
+    return pantalla.charAt(0);
 
 }
