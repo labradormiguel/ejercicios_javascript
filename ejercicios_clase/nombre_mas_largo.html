@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre más largo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calcular.js"></script>
+    <script src="validadores.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="nombre">
+            <input type="text" name="nombre" id="nombre" autofocus placeholder="Introduce un nombre">
+            <input type="button" value="Enviar" onclick="pulsar()">
+        </div>
+        <div class="lista">
+            <table id="listanombres">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Longitud</th>
+                </tr>
+            </table>
+        </div>
+        <div class="stats">
+            <ul id="stats">
+                <li>Has introducido un total de <span id="total">0</span> nombres.</li>
+                <li>El nombre más largo es <span id="campeon">_</span> con <span id="longitud">_</span> letras.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

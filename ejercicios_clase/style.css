@@ -1,0 +1,65 @@
+.nombre {
+    grid-area: header;
+    text-align: center;
+}
+
+.lista {
+    grid-area: main;
+    text-align: center;
+
+}
+
+.stats {
+    grid-area: right;
+    text-align: left;
+
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main right right right right right';
+    gap: 10px;
+    background-color: lightgray;
+}
+
+.grid-container>div {
+    padding: 20px 20px;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+table{
+    width: 100%;
+}
+
+input[type="text"] {
+    padding-left: 15px;
+    height: 50px;
+    width: 300px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+input[type="button"] {
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+body{
+    background-color: lightgray;
+    height: 95vh;
+}
+
+#stats{
+    visibility: hidden;
+}
