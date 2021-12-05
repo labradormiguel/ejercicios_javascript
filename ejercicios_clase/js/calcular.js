@@ -66,7 +66,7 @@ function pulsar() {
 
     else {
 
-        // Si la caja no está vacía no añade nada y devolvemos el foco al input
+        // Si la caja está vacía no añade nada y devolvemos el foco al input
 
         document.getElementById("nombre").focus();
         document.getElementById("nombre").value = '';
